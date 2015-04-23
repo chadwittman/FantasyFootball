@@ -10,18 +10,18 @@ library(quadprog)
 library(ggplot2)
 
 #enter the week
-week <- "14"
+week <- "1"
 
 #grab the data
 cbs_nz_url <- paste("http://fantasynews.cbssports.com/fantasyfootball/stats/weeklyprojections/RB/", week, "/nathan_zegura/ppr?&print_rows=9999", sep="")
 cbs_je_url <- paste("http://fantasynews.cbssports.com/fantasyfootball/stats/weeklyprojections/RB/", week, "/jamey_eisenberg/ppr?&print_rows=9999", sep="")
 cbs_dr_url <- paste("http://fantasynews.cbssports.com/fantasyfootball/stats/weeklyprojections/RB/", week, "/dave_richard/ppr?&print_rows=9999", sep="")
-url1_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2013", sep="")
-url2_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2013&startIndex=40", sep="")
-url3_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2013&startIndex=80", sep="")
-url4_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2013&startIndex=120", sep="")
-url_fftoday1 <- paste("http://www.fftoday.com/rankings/playerwkproj.php?Season=2013&GameWeek=", week, "&PosID=20", sep="")
-url_fftoday2 <- paste("http://www.fftoday.com/rankings/playerwkproj.php?Season=2013&GameWeek=", week, "&PosID=20&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=1", sep="")
+url1_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2014", sep="")
+url2_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2014&startIndex=40", sep="")
+url3_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2014&startIndex=80", sep="")
+url4_espn <- paste("http://games.espn.go.com/ffl/tools/projections?slotCategoryId=2&scoringPeriodId=", week, "&seasonId=2014&startIndex=120", sep="")
+url_fftoday1 <- paste("http://www.fftoday.com/rankings/playerwkproj.php?Season=2014&GameWeek=", week, "&PosID=20", sep="")
+url_fftoday2 <- paste("http://www.fftoday.com/rankings/playerwkproj.php?Season=2014&GameWeek=", week, "&PosID=20&LeagueID=1&order_by=FFPts&sort_order=DESC&cur_page=1", sep="")
 url_bsports <- "http://www.bsports.com/decisionmakerrb"
 url_ffs <- "http://www.fantasysharks.com/apps/Projections/WeeklyRBProjections.php"
 
